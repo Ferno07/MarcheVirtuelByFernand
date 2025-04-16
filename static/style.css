@@ -1,0 +1,102 @@
+.ferno {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+
+.c {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+}
+  
+.ca_1 {
+    box-shadow: 0 1px 3px blue, 0 1px 2px blue;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+.ca_1:hover {
+    box-shadow: 0 14px 28px blue, 0 10px 10px blue;
+}
+
+
+
+
+
+#read{
+  background-color: #f8f9fa;
+}
+
+body {
+
+  background-image: url("uploads/image1Famille.jpg");
+  background-size: cover;       
+  background-repeat: no-repeat; 
+
+}
+
+.navbar-custom {
+  background-color: blue; 
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .dropdown-item {
+  color: white !important;
+}
+.navbar-custom .navbar-toggler {
+  border-color: white;
+}
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.footetp {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Pour s'assurer qu'il reste au-dessus des autres éléments */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+.headerp{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Pour s'assurer qu'il reste au-dessus des autres éléments format('truetype');*/ 
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Ombre légère */
+}
+#MiKwabo{
+  font-family:'WildTrails', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+#accroche {
+  font-family: 'Loverine',Arial;
+  font-weight: bold;
+}
+#nom_entreprise{
+  font-family: 'LovelySign';
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'WildTrails';
+  src: url(./Police/WildTrails.TTF) format('truetype'); 
+}
+@font-face {
+  font-family: 'Loverine';
+  src: url(./Police/Loverine.otf) format('truetype'); 
+}
+@font-face {
+  font-family: 'LovelySign';
+  src: url(./Police/LovelySign.otf) format('truetype'); 
+}
+
+
+  

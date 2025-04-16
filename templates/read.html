@@ -1,0 +1,26 @@
+{% include "header.html" %}
+  <div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div>
+            <img src="../{{ entreprise['logo'] }}" class="h-100 mb-3"    width="300" height="300" >
+                  
+          </div>
+        </div>  
+        <div class="col">
+          <h1 id="nom_entreprise">{{ entreprise['nom_entreprise'] }}</h1>
+          <div   id="read">
+            <p>{{ entreprise['description'] }}</p>
+          <p> Adresse : {{ entreprise['adresse'] }}</p>
+          <p>Téléphone :  {{ entreprise['telephone'] }}</p>
+          <p> Nos Services : {{ entreprise['services'] }}</p>
+          </div>
+        </div> 
+  </div>
+</div>
+{% if admin %}
+<a href="/delete/{{ entreprise['id'] }}">Supprimer</a>
+{%else%}
+{% endif %}
+{% include "footer.html" %}

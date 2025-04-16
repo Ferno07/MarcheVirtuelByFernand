@@ -1,0 +1,29 @@
+{% include "header.html" %}
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <div>
+    <div>
+      <!-- Logo intégré dans la marque -->
+      <!--  <h1>{{ found['num_found'] }} entreprise trouvées (page {{ found['page'] }}/{{ found['num_pages'] }})</h1>  -->
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+      {% for result in found['results'] %}
+      <div>
+        <a href="/read/{{ result['entry'] }}">
+          <div  class="card h-100 mb-3   ca ca_1 " >
+            <img src="{{ result['logo'] }}" class="h-100 mb-3"    width="100%" height="140" >
+            <div>
+                <p>{{ result['nom_entreprise'] }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+  </div>
+  <div>
+    <div class="mb-4 mt-4">
+      <a href="/search?query={{ found['query'] }}&page={{ found['next_page'] }}">Page suivante</a>
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}

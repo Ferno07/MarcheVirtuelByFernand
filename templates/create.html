@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+<form action="/create" method="post" enctype="multipart/form-data">
+  <div class="p-3 m-0 border-0 bd-example m-0 border-0" >
+    <h1>Créer une nouvelle entreprise</h1>
+
+    <p>Nom de votre entreprise :
+      <input type="text" class="form-control" name="nom_entreprise" required>
+    </p>
+
+    <p>Adresse :
+      <input type="text" class="form-control" name="adresse" required>
+    </p>
+
+    <p>Téléphone :
+      <input type="text" class="form-control" name="telephone" required>
+    </p>
+
+    <p>Description :
+      <textarea class="form-control" name="description" required></textarea>
+    </p>
+
+    <p>Image (logo) :
+      <input type="file" class="form-control" name="logo" accept="image/*" required>
+    </p>
+
+    <p>Vos services :
+      <input type="text" class="form-control" name="services" required>
+    </p>
+
+    <input type="submit" class="btn btn-primary" value="Créer">
+  </div>
+</form>
+
+{% include "footer.html" %}

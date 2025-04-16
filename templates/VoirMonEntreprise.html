@@ -1,0 +1,25 @@
+{% include "header.html" %}
+
+
+  <div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div>
+              <h1>{{ entreprise['nom_entreprise'] }}</h1>
+              {% if isLogin %}
+              <p>
+              <a href="/update/{{ entreprise['id'] }}">Modifier</a>
+           
+              </p>
+              {% else %}
+              <p> Veuillez vous connecter pour pouvoir modifier ou supprimer</p>
+              {% endif %}
+
+              <p>{{ entreprise['description'] }}</p>
+              
+          </div>
+        </div>   
+  </div>
+</div>
+{% include "footer.html" %}

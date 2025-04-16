@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+<form action="/update/{{ entreprise['id'] }}" method="POST" enctype="multipart/form-data">
+  <h1>Mettre mon entreprise à jour</h1>
+
+  <p>Nom Entreprise :
+    <input type="text" name="nom_entreprise" value="{{ entreprise['nom_entreprise'] }}">
+  </p>
+
+  <p>Adresse :
+    <input type="text" name="adresse" value="{{ entreprise['adresse'] }}">
+  </p>
+
+  <p>Téléphone :
+    <input type="text" name="telephone" value="{{ entreprise['telephone'] }}">
+  </p>
+
+  <p>Description :<br>
+    <textarea name="description">{{ entreprise['description'] }}</textarea>
+  </p>
+  <p>Services :<br>
+    <textarea name="description">{{ entreprise['services'] }}</textarea>
+  </p>
+
+  <p>Logo :
+    <input type="file" name="logo" accept="image/*">
+  </p>
+
+  <div>
+    <input type="submit" value="Modifier">
+    <a href="/read/{{ entreprise['id'] }}">Annuler</a>
+  </div>
+</form>
+
+{% include "footer.html" %}
